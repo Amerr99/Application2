@@ -17,7 +17,6 @@ class App2 extends StatelessWidget {
         drawer: Drawer(),
         body: Container(
           decoration: BoxDecoration(
-              boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),spreadRadius: 7, blurRadius: 5)],
               gradient:
                   LinearGradient(colors: [Colors.lightBlue, Colors.redAccent])),
           child: Column(
@@ -34,37 +33,51 @@ class App2 extends StatelessWidget {
               Container(
                 child: Row(
                   children: [
-                    Container(
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),spreadRadius: 7, blurRadius: 5)],
-                          border: Border.all(color: Colors.black),
-                          color: Colors.amber),
-                      margin: EdgeInsets.fromLTRB(50, 20, 0, 20),
+                    Card(
+                      color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(20, 20, 0, 20),
+                      child: 
+                      Container( 
+                           padding: EdgeInsets.all(10),
+                           width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
                       child: Text(
                         "fluffy",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                          style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.pink),
-                          color: Colors.amber),
-                      margin: EdgeInsets.fromLTRB(60, 20, 0, 20),
-                      child: Text(
+                    Card(
+                      color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(40, 20, 0, 20),
+                      child: Container( 
+                        width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
+                        padding: EdgeInsets.all(10),
+                      child:Text(
                         "3 months",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                         style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.pink),
-                          color: Colors.amber),
-                      margin: EdgeInsets.fromLTRB(60, 20, 0, 20),
+                    Card(
+                     color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(40, 20, 0, 20),
+                      child : Container(
+                        padding: EdgeInsets.all(10),
+                        width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
                       child: Text(
                         "female",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                        style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
                   ],
                 ),
@@ -72,43 +85,59 @@ class App2 extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(20),
                 padding: EdgeInsets.all(10),
-                width: 100,
-                height: 100,
+                width: 200,
+                height: 200,
                 child: Image.network(
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg"),
               ),
               Container(
                 child: Row(
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.green),
-                          color: Colors.amber),
-                       margin: EdgeInsets.fromLTRB(35, 20, 0, 20),
-                      child: Text(
+                    Card(
+                      color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(20, 20, 0, 20),
+                      child:
+                      Container( 
+                        padding: EdgeInsets.all(10),
+                        width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
+                        child: Text(
                         "Ponokyo",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                          style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.yellow, width: 2),
-                          color: Colors.amber),
-                      margin: EdgeInsets.fromLTRB(60, 20, 0, 20),
+                    Card(
+                      color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(40, 20, 0, 20),
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
                       child: Text(
                         "7 Months",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                         style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.teal, width: 3),
-                          color: Colors.amber),
-                      margin: EdgeInsets.fromLTRB(60, 20, 0, 20),
+                    Card(
+                      color: Color.fromARGB(255, 248, 203, 70),
+                      
+                      shape: StadiumBorder(side: BorderSide(color: Colors.purple,width: 5)),
+                      margin: EdgeInsets.fromLTRB(40, 20, 0, 20),
+                      child:Container(
+                        padding: EdgeInsets.all(10),
+                        width: 100,
+                           height: 40,
+                           alignment: Alignment.center,
                       child: Text(
                         "Male",
-                        style: TextStyle(fontSize: 18),
-                      ),
+                        style: TextStyle(fontSize: 18 , color: Color.fromARGB(255, 10, 0, 148) , fontWeight: FontWeight.bold),
+                      ),),
                     ),
                   ],
                 ),
